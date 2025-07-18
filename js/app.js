@@ -16,3 +16,19 @@ enlaces.addEventListener('click', function() {
     menubar.style.transitionDelay = '0.5s';
     menubar.classList.remove('active');
 });
+
+/* SLIDER DE PRODUCTOS */
+var contenedor 
+    = document.querySelector('.slider');
+var btnIzq = document.getElementById("btn-izquierda");
+var btnDer = document.getElementById("btn-derecha");
+
+btnDer.addEventListener('click', function() {
+    //container.scrollLeft = container.scrollLeft + 
+    contenedor.scrollLeft += contenedor.offsetWidth;
+});
+
+btnIzq.addEventListener('click', function() {
+    //container.scrollLeft = container.scrollLeft + 
+    contenedor.scrollLeft -= contenedor.offsetWidth;
+});
